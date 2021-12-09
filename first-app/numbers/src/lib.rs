@@ -37,3 +37,9 @@ fn output_sequence(numbers: &[u8]) {
         println!("{}",n);
     }
 }
+
+#[test]
+fn generate_sequence_should_work() {
+    let result = generate_sequence(3);
+    assert_eq!(result, &[1,2,3]);
+}
